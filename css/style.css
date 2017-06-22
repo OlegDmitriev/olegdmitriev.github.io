@@ -1,0 +1,44 @@
+section#main {
+	background-color: #a400ae;
+	height: 100vh;
+}
+
+h1 {
+	color: #fff;
+	text-transform: uppercase;
+	
+}
+
+.main_header {
+	margin-top: 25%;
+}
+
+section#example {
+	height: 100vh;
+	padding-top: 200px;
+}
+
+.box {
+	height: 300px;
+	border: 2px solid #a400ae;
+}
+
+.box_in {
+	height: 50px;
+	border: 2px dashed green;
+}
+
+.elem {
+	border-color: #000;
+	border: 2px dashed #000;
+	height: 100px;
+}
+
+.zel {
+	height: 50px;
+	background-color: green;
+}
+
+.strelka {
+	width: 100px;
+}
