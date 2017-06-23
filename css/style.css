@@ -1,44 +1,20 @@
-section#main {
-	background-color: #a400ae;
-	height: 100vh;
+body, p {
+	padding: 0px;
+	margin: 0px;
 }
 
-h1 {
-	color: #fff;
-	text-transform: uppercase;
-	
-}
-
-.main_header {
-	margin-top: 25%;
-}
-
-section#example {
-	height: 100vh;
-	padding-top: 200px;
-}
-
-.box {
-	height: 300px;
-	border: 2px solid #a400ae;
-}
-
-.box_in {
-	height: 50px;
-	border: 2px dashed green;
-}
-
-.elem {
-	border-color: #000;
-	border: 2px dashed #000;
+.ex-1 {
+	width: 100%;
 	height: 100px;
+	background-color: #333;
+	display: inline-block;
+	position: fixed;
+	margin-top: -100px;
+}
+div a {
+	color: #fff;
 }
 
-.zel {
-	height: 50px;
-	background-color: green;
-}
-
-.strelka {
-	width: 100px;
+.ex-2 {
+	margin: 100px;
 }
