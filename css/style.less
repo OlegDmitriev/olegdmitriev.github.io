@@ -14,6 +14,10 @@
 @white: #fff;
 @base-text: #626262;
 @bg-grey: #f5f5f5;
+@bg-tomi: #4eb2f7;
+@bg-koimona: #c049f8;
+@bg-koire: #817eff;
+@bg-lara: #f74770;
 
 body {
 	font-style: 14px;
@@ -24,8 +28,27 @@ input, button, textarea {
 	outline: none;
 	}
 }
+section {
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+.section-header {
+	margin-bottom: 7%;
+	h2 {
+		font-size: 50px;
+		.opn-bold;
+		span {
+			color: @base-red;
+		}
+	}
+	p {
+		font-size: 16px;
+	}
+}
+/* Main Screen */
 header {
-	background-color: @bg-grey;
+	background: @bg-grey url(../img/main-bg.jpg) no-repeat center center;
+	background-size: cover;
 	min-height: 700px;
 	height: 100vh;
 }
@@ -176,4 +199,82 @@ header {
 
 		}
 	}
+}
+
+/* process cection */
+
+.process {
+	&-box {
+		color: @white;
+		text-align: center;
+		padding: 25px;
+		padding-top: 35px;
+		i.fa {
+			font-size: 50px;
+		}
+		h4 {
+			margin-top: 25px;
+			font-size: 20px;
+			.opn-bold;
+		}
+		p {
+			font-size: 16px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	}
+	&-btn {
+		position: absolute;
+		left: 50%;
+		margin-left: -40%;
+		bottom: -30px;
+		border: none;
+		color: @base-black;
+		padding: 15px;
+		width: 80%;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+		border-radius: 50px;
+		background-color: @white;
+		font-size: 16px;
+	}
+}
+.btn-plus {
+	vertical-align: middle;
+	margin-right: 5px;
+	width: 16px;
+	height: 2px;
+	display: inline-block;
+	background-color: @base-black;
+	&:before {
+		display: inline-block;
+		content: '';
+		width: 16px;
+		height: 3px;
+		background-color: @base-black;
+		position: absolute;
+		-webkit-transform: rotate(90deg) translateY(8px);
+		-ms-transform: rotate(90deg) translateY(8px);
+		-o-transform: rotate(90deg) translateY(8px);
+		transform: rotate(90deg) translateY(8px);
+	}
+}
+.box {
+	&-tomi {
+		background-color: @bg-tomi;
+	}&-koimona {
+		background-color: @bg-koimona;
+	}&-koire {
+		background-color: @bg-koire;
+	}&-lara {
+		background-color: @bg-lara;
+	}
+}
+i.fa-camera-retro {
+	-webkit-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	transform: rotate(-15deg);
 }
