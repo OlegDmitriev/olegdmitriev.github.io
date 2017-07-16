@@ -1,139 +1,365 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Webplaneta - Запускаем бизнес в интернете.</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:url" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Webplaneta - верстка сайтов на HTML и CSS">
-    <meta property="og:image" content="">
-    <meta property="og:description" content="Закажите разработку сайта без посредников от 13 990 рублей">
-    <meta property="og:site_name" content="Портфолио верстальщика">
-    <meta property="article:author" content="Webplaneta">
-    <title>Webplaneta - Помогаем развивать бизнес в интернете.</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/fontello-embedded.css">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link rel="icon" href="img/Logo.png">
+    <link rel="apple-touch-icon" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/etline-font.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body id="top">
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  </head>
-  <body>
-    
-    <div class="main parallax-window" data-parallax="scroll" data-image-src="img/main-bg.jpg">
-      <div class="main-overlay"></div>
-        <div class="wrapper">
-          <div class="main-header">
-            <h1>Webplaneta</h1>
-            <div class="main-line"></div>
-            <p>Верстка на HTML и CSS <br>Разработка сайтов под ключ</p>
-          </div>
-        </div>
-        <a class="main-down slowly" href="#portfolio"><i class="icon-down"></i></a>
-    </div> 
-
-  <div class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="section-header">Портфолио</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="portfolio-block">
-            <img src="img/portfolio/1.jpg" alt="Работа №1">
-            <a class="link cd-modal-trigger" data-work="work-1" href="#0">Смотреть работу</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="portfolio-block">
-            <img src="img/portfolio/2.jpg" alt="Работа №2">
-            <a class="link cd-modal-trigger" data-work="work-2" href="#0">Смотреть работу</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="portfolio-block">
-            <img src="img/portfolio/3.jpg" alt="Работа №3">
-            <a class="link cd-modal-trigger" data-work="work-3" href="#0">Смотреть работу</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer">
-    <div class="container">
-      <div class="col-md-3">
-      <strong>Олег Дмитриев</strong>
-      <p>Разработка сайтов <br>под ключ</p>
-    </div>
-    <div class="col-md-6">
-      <strong>Подпишитесь</strong>
-      <div class="social-links">
-        <a href="#"><i class="icon-vk"></i></a>
-        <a href="#"><i class="icon-instagram"></i></a>
-        <a href="#"><i class="icon-twitter"></i></a>
-      </div>
-    </div>
-      <div class="col-md-3">
-        <strong>Напишите мне</strong>
-        <a href="https://vk.com/id246952288" class="offer-btn">Заказать сайт</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Всплывающие окна -->
-
-  <div class="cd-modal">
-  <div class="modal-content">
-    
-  </div> <!-- .modal-content -->
-
-  <a href="#0" class="modal-close">Close</a>
-</div> <!-- .cd-modal -->
-
-<div class="cd-transition-layer"> 
-  <div class="bg-layer"></div>
-</div> <!-- .cd-transition-layer -->
-
- <!-- <div class="modal fade" id="work" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Описание проекта</h4>
+    <section class="hero">
+        <section class="navigation">
+            <header>
+                <div class="header-content">
+                    <div class="logo"><a href="#"><span class="logo-web">Web</span>planeta</a></div>
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="primary-nav">
+                                <li><a href="#features">Главная</a></li>
+                                <li><a href="#assets">Портфолио</a></li>
+                                <li><a href="#blog">Фриланс</a></li>
+                                <li><a href="#download">Контакты</a></li>
+                            </ul>
+                            <ul class="member-actions">
+                                <li><a href="#download" class="login">Авторизация</a></li>
+                                <li><a href="#download" class="btn-white btn-small">Зарегистрироваться</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="hero-content text-center">
+                        <h1><span>Web</span>planeta</h1>
+                        <p class="intro">Запускаем бизнес в интернете. Создание сайтов на заказ.</p>
+                        <a href="#" class="btn btn-fill btn-large btn-margin-right">Заказать сайт</a> <a href="#" class="btn btn-accent btn-large">Портфолио</a>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-              
-            </div>
-          </div>
         </div>
-      </div> -->
+        <div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
+    </section>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/parallax.min.js"></script>
+    <!-- Второй блок -->
+    <section class="intro section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe033;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Дизайн сайтов</h5>
+                        <ul>
+                            <li class="intro-content-list">Сайт-визитка</li>
+                            <li class="intro-content-list">Корпоративные сайты</li>
+                            <li class="intro-content-list">Интернет-магазины</li>
+                            <li class="intro-content-list">Дендинги (Landing Page)</li>
+                            <li class="intro-content-list">Сайты продуктов и услуг</li>
+                            <li class="intro-content-list">Интернет-каталоги</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe030;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Разработка сайтов</h5>
+                        <p>Под каждый сайт мы пишем структуру, создаём прототип и разрабатываем индивидуальный дизайн, учитывая особенности вашего бизнеса, пожелания по дизайну и современные тенденции.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe046;" class="icon"></span>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>SEO продвижение</h5>
+                        <p>Перед началом и во время продвижения сайта мы постояно улучшаем его, учитывая все современные тенденции интернет-маркетинга и удобства пользования сайтом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Третий блок -->
+    <section class="features section-padding" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-7">
+                    <div class="feature-list">
+                        <h3><span>Web</span>planeta - будет продвигать Ваш продукт вперёд!</h3>
+                        <p>Представьте нам свой продукт, мы оформим его красивым современным способом. Превратим ваших посетителей в клиентов.</p>
+                        <ul class="features-stack">
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe03e;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Оптимизация под все устройства</h5>
+                                    <p><span>Web</span>planeta - сделает ваш сайт будет оптимизирован под все устройства и гаджеты. Будет выглядеть также великолепно как на ПК.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe040;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Пользовательский дизайн</h5>
+                                    <p><span>Web</span>planeta - мы создим прототип и разработаем для Вас индивидуальный дизайн, учитывая особенности вашего бизнеса, пожелания по дизайну.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe03c;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Чистый код</h5>
+                                    <p><span>Web</span>planeta - мы используем чистый код при создании сайта, обеспечивая высокую скорость загруски сайта для всех пользователей.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="device-showcase">
+            <div class="devices">
+                <div class="ipad-wrap wp1"></div>
+                <div class="iphone-wrap wp2"></div>
+            </div>
+        </div>
+        <div class="responsive-feature-img"><img src="img/devices1.png" alt="responsive devices"></div>
+    </section>
+    <section class="features-extra section-padding" id="assets">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="feature-list">
+                        <h3>«А сделайте-ка красиво!»</h3>
+                        <p>Сайт компании или персональный сайт без дизайна не возможен. Графический дизайн — это обложка сайта, его внешний вид, оформление, красота. С помощью дизайна сайта сразу определяется его стиль. Еще не изучив контент (описание услуг, статьи и т.д.) пользователь благодаря дизайну сразу может понять, что перед ним — бизнес-сайт серьезной компании, развлекательный портал или сайт сети ресторанов. Цветовые схемы, четкость линий, стиль элементов — это те инструменты дизайна, которые работают в совокупностью со структурой сайта и выполняют его главную задачу — заинтересовать и продать.
+                        </p>
+                        <a href="#" class="btn btn-ghost btn-accent btn-small">Заказать дизайн сайта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="macbook-wrap wp3"></div>
+        <div class="responsive-feature-img"><img src="img/macbook-pro.png" alt="responsive devices"></div>
+    </section>
+    <section class="hero-strip section-padding">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h2><span>Web</span>planeta - сакажите сайт прямо сейчас.</h2>
+                <p>Мы разрабатываем сайты компаниям, которые находятся не только в пределах Дальнего Востока, но и в других городах по всей Российской федерации.</p>
+                <a href="#" class="btn btn-ghost btn-accent btn-large">Сделать заказ</a>
+                <div class="logo-placeholder floating-logo"><img src="img/sketch-logo.png" alt="Sketch Logo"></div>
+            </div>
+        </div>
+    </section>
+    <section class="blog-intro section-padding" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Несколько продуктов от - <span>Web</span>planeta</h3>
+                </div>
+            <!-- </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <h5>EXCLUSIVE TO CODROPS</h5>
+                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <h5>SPREADING PIXELS AROUND THE WORLD</h5>
+                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section class="blog text-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <figure>
+                            <a href="img/blog-img-01.jpg" class="single_image">
+                                <div class="blog-img-wrap">
+                                    <div class="overlay">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <img src="img/blog-img-01.jpg" alt="Sedna blog image"/>
+                                </div>
+                            </a>
+                            <figcaption>
+                            <h2><a href="#" class="blog-category" data-toggle="tooltip" data-placement="top" data-original-title="See more posts">Product</a></h2>
+                            <p><a href="#" class="blog-post-title">Getting started with Sedna <i class="fa fa-angle-right"></i></a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <figure>
+                            <a href="img/blog-img-02.jpg" class="single_image">
+                                <div class="blog-img-wrap">
+                                    <div class="overlay">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <img src="img/blog-img-02.jpg" alt="Sedna blog image"/>
+                                </div>
+                            </a>
+                            <figcaption>
+                            <h2><a href="#" class="blog-category" data-toggle="tooltip" data-placement="top" data-original-title="See more posts">Technology</a></h2>
+                            <p><a href="#" class="blog-post-title">Why IE8 support is deminishing <i class="fa fa-angle-right"></i></a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <figure>
+                            <a href="img/blog-img-03.jpg" class="single_image">
+                                <div class="blog-img-wrap">
+                                    <div class="overlay">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <img src="img/blog-img-03.jpg" class="single_image" alt="Sedna blog image"/>
+                                </div>
+                            </a>
+                            <figcaption>
+                            <h2><a href="#" class="blog-category" data-toggle="tooltip" data-placement="top" data-original-title="See more posts">Product</a></h2>
+                            <p><a href="#" class="blog-post-title">Sedna tutorial: How to begin your <i class="fa fa-angle-right"></i></a></p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <a href="#" class="btn btn-ghost btn-accent btn-small">Портфолио</a>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial-slider section-padding text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="avatar"><img src="img/avatar.jpg" alt="Avatar"></div>
+                                <h2>"Я создал интернет магазин и продавал обувь. Бизнес развивался очень медленно, но после того как обратился в студию Webplaneta, ребята поработали с моим сайтом и сделали его презентабельным - заказов сразу увеличилось вдвое! Также помогли с продвижением сайта."</h2>
+                                <p class="author">Игорь Тихонов, Предпрениматель.</p>
+                            </li>
+                            <li>
+                                <div class="avatar"><img src="img/mani.jpg" alt="Avatar"></div>
+                                <h2>"Очень помогли мне со стартом моего бизнеса! Мало того что сделали быстро сайт, но также мне помогли советами как лучше разместить текст и где его поправить!"</h2>
+                                <p class="author">Нина Станишевская, Интернет-магазин.</p>
+                            </li>
+                            <li>
+                                <div class="avatar"><img src="img/130.jpg" alt="Avatar"></div>
+                                <h2>"Очень ответственно относятся к своей работе. Делают всё быстро и в сроки. не пытаются стрести лишних денег как другие Web-студии."</h2>
+                                <p class="author">Дмитрий Меньшиков, Строительная Фирма</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="sign-up section-padding text-center" id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>Get started with Sedna, absolutely free</h3>
+                    <p>Grab your copy today, exclusively from Codrops</p>
+                    <form class="signup-form" action="#" method="POST" role="form">
+                        <div class="form-input-group">
+                            <i class="fa fa-envelope"></i><input type="text" class="" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-input-group">
+                            <i class="fa fa-lock"></i><input type="text" class="" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn-fill sign-up-btn">Отправить...</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="to-top">
+        <div class="container">
+            <div class="row">
+                <div class="to-top-wrap">
+                    <a href="#top" class="top"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="footer-links">
+                        <ul class="footer-group">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Портфолио</a></li>
+                            <li><a href="#">Фриланс</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a class="footer-list" href="#">Партнёрская программа</a></li>
+                        </ul>
+                        <p>Copyright © 2016 - 2017 <a href="#">Webplaneta</a><br>
+                        <a href="#">Licence</a> | Crafted with <span class="fa fa-heart pulse2"></span> by <a href="https://vk.com/id246952288">Oleg Dmitriev</a>.</p>
+                    </div>
+                </div>
+                <div class="social-share">
+                    <p><span>Web</span>planeta - мы в соц. сетях.</p>
+                    <a href="#" class="twitter-share"><i class="fa fa-google-plus"></i></a> <a href="#" class="facebook-share"><i class="fa fa-facebook"></i></a> <a href="#" class="vk-share"><i class="fa fa-vk"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="bower_components/retina.js/dist/retina.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="bower_components/classie/classie.js"></script>
+    <script src="bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      $(function() {
-        var link = $('.cd-modal-trigger');
-        link.on('click', function(event) {
-          var work = $(this).attr('data-work');
-          $('.modal-content').load(work+'.html');
-        });
-      });
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
     </script>
-    <script>
-    $(document).ready(function(){
-      $('.slowly').on("click",function(event){
-      event.preventDefault();
-      var id = $(this).attr('href'),
-      top = $(id).offset().top;
-      $("body,html").animate({scrollTop: top}, 1500);
-      });
-    });
-    </script>
-  </body>
+</body>
 </html>
